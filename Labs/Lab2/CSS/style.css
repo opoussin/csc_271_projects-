@@ -1,0 +1,90 @@
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #454545;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+section {
+    
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+section h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+
+
+
+article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Optional: Adds space between the articles */
+    margin: 20px 0;
+}
+
+article > * {
+    flex: 1; /* Ensures that all children of the article take equal space */
+    justify-content: space-around;
+
+}
