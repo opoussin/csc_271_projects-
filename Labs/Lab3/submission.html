@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe submission </title>
+</head>
+<body>
+    <header>
+        <h1>Submit your own recipe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <form action="index.html" method="post">
+            <label for="recipe-name">Recipe name</label>
+            <br>
+            <input type="text" name="recipe-name" id="recipe-name">
+            <br>
+            
+            <label for="ingredients">Ingredients and instructions</label>
+            <br>
+            <textarea  id="ingredients" name="ingredients" rows="4" cols="50"></textarea>
+            <br>
+
+            <h3>Difficulty</h3>
+
+            <input type="radio" id="hard" name="hard">
+            <label for="hard">Hard</label>
+            <input type="radio" id="medium" name="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="easy" name="easy">
+            <label for="easy">Easy</label>
+            <br>
+
+            <h3>Dietary preferences</h3>
+            <input type="checkbox" id="vegetarian" name="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+            <input type="checkbox" id="vegan" name="vegan">
+            <label for="vegan">Vegan</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
