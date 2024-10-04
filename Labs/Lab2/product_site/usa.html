@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>USA</title>
 </head>
 <body>
     <header>
-        <img src="images/logo_nobg.png" alt="Next Stop's logo" height="70">
-        <h1>Next Stop</h1>
+        <div class="topBar"> 
+            <img src="images/logo_title.png" alt="Next Stop's logo" height="70">
+        </div>
+       
         <nav>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="usa.html">USA</a></li>
-                <li><a href="#France">France</a></li>
-                <li><a href="#Cultural_differences">Cultural differences</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="usa.html">USA</a>
+            <a href="france.html">France</a>
+            <a href="#Cultural_differences">Cultural differences</a>
         </nav>
     </header>
     <main>
-        <h1>Study in the USA</h1>
+        <section>
+          <h1>Study in the USA</h1>
         <p>Welcome to the USA! This is a guide to help you get accomodate to the United States and give you all the tips you might need during your stay.</p>
         <img src="images/USA_flag.jpeg" alt="USA flag" height="200">
-
-        <section>
+  
+        </section>
+        
+        <section class="even">
           <h2>URI</h2>
             <p>URI as the University of Rhode Island is one of the few universities located in the state of Rhode Island on the east coast, the smallest state of the USA. It is close to Providence, it's capital city, and to Boston Massashussets. </p>
             <img src="images/URI_logo.jpg" alt="URI logo" height="300">
@@ -31,7 +35,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/AWs_-nGU-Bo?si=UanltZlvXIDBAFJ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
         </section>
-        <section>
+        <section class="uneven">
             <h2>Shoes/clothes sizes guide</h2>
 
             <table border="1">
@@ -98,12 +102,12 @@
             </table>
         </section>
 
-        <section>
+        <section class="even">
             <h2>Recipes to feel at home</h2>
 
             <p>Feeling homesick? We prepared some French recipes to make in America with ingredients you can find in the grocery store.</p>
             <br>
-            <p><em>More recipes to come....</em></p>
+            <p id="form-undertext"><em>More recipes to come....</em></p>
             <br>
 
             <form action="usa.html" method="post">
@@ -123,6 +127,11 @@
                 <input type="submit" value="Submit">
             </form>
         </section>
+        <footer>
+            <p><a href="/">Home</a></p> 
+            <p><a href="https://www.studyabroad.com" target="_blank">Study Abroad Resources</a></p>
+            <p><a href="mailto:oceane.poussin@uri.edu">Contact Us</a></p>
+        </footer>
 
     </main>
 </body>
