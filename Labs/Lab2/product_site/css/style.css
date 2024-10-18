@@ -47,12 +47,6 @@ nav {
     color: #fcaeae;
 }
 
-.navigation a:active {
-    color: white;
-    background-color: #0C2451;
-}
-
-
 section {
     padding: 20px;
     margin: 20px 0;
@@ -263,8 +257,10 @@ footer a:hover {
     .content {
         width: 100%;
         font-size: 1.2em;
+        line-height: 1.6;
     }
-    .menu{
+
+    .menu {
         width: 100%;
         padding: 20px;
 
