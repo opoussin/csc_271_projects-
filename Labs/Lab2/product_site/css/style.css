@@ -159,7 +159,7 @@ form select {
 }
 
 form input[type="submit"],
-form button {
+ button {
     width: 100%;
     padding: 10px;
     background-color: #435FC4;

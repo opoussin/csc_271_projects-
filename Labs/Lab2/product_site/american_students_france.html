@@ -31,43 +31,61 @@
             <a href="#Health">Health and Wellness in France</a>
         </div>
         <div class="content">
-            <section>
+            <section >                
                 <h1>Study in France</h1>
-                <p>Welcome to France! This is a guide to help you get accomodate to France and give you all the tips and advices you might need during your stay.</p>
+                <p class="contents">Welcome to France! This is a guide to help you get accomodate to France and give you all the tips and advices you might need during your stay.</p>
                 <img src="images/France_flag.jpeg" alt="France flag" height="200">
-                <p>France is known for its rich culture, history, and distinct educational system. Studying here offers a unique opportunity to experience a new way of life while pursuing academic growth. Below are important aspects of French life and culture that will help you navigate your time as a student in France.</p>
+                <p class="contents">France is known for its rich culture, history, and distinct educational system. Studying here offers a unique opportunity to experience a new way of life while pursuing academic growth. Below are important aspects of French life and culture that will help you navigate your time as a student in France.</p>
+                <button  onclick="translateToFrench()">Translate page to French</button>
             </section>
         
             <section class="even" id="Credits">
-                <h2>Credits equivalence</h2>
+                <h2 class="contents">Credits equivalence</h2>
 
-                <p>Credits equivalence between schools in France and the USA can be a crucial aspect for students planning to study abroad. In France, the European Credit Transfer and Accumulation System (ECTS) is commonly used, where one academic year typically equals 60 ECTS credits. In contrast, the USA uses a credit hour system, where one academic year usually equals around 30 credit hours. To facilitate the transition, many universities have established equivalence agreements, allowing students to transfer credits seamlessly. For instance, 1 ECTS credit is generally considered equivalent to 0.5 to 0.75 US credit hours. Understanding these equivalences can help students plan their studies and ensure they meet the necessary academic requirements in both countries.</p>
+                <p class="contents">Credits equivalence between schools in France and the USA can be a crucial aspect for students planning to study abroad. In France, the European Credit Transfer and Accumulation System (ECTS) is commonly used, where one academic year typically equals 60 ECTS credits. In contrast, the USA uses a credit hour system, where one academic year usually equals around 30 credit hours. To facilitate the transition, many universities have established equivalence agreements, allowing students to transfer credits seamlessly. For instance, 1 ECTS credit is generally considered equivalent to 0.5 to 0.75 US credit hours. Understanding these equivalences can help students plan their studies and ensure they meet the necessary academic requirements in both countries.</p>
 
                 <br>
-                <p><strong>1 US credits = 1,5 / 2 ECTS</strong></p>
+                <p><strong>1 US credits = 1,5 ECTS</strong></p>
+
+                <form action="" method="post">
+                    <label for="CreditForm" class="contents">Choose a recipe:</label>    
+                    <select name="translation" id="translation">
+                        <option value="1">US to UE</option>
+                        <option value="2">UE to US</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="suggestion" class="contents">Enter number of credits: </label>
+                    <input type="number" id="CreditNumber" name="CreditNumber">
+                    <p id="CreditResult">0</p>
+                    <br>
+                    <br>
+                    <input type="submit" value="Calulate">
+                </form>
+
             </section>
 
             <section class="uneven" id="Campus">
-                <h2>Campus Life and Social Opportunities</h2>
-                <p>While social activities are not as integrated into the university experience as they are in American colleges, French universities still offer clubs and student organizations, though they may be less prominent. However, life in France is centered more around the cities themselves than the campuses. Taking part in local events, festivals, and exploring the cultural landscape is a significant part of the experience.</p>
-                <p>What to expect:</p>
-                <ul>
-                    <li>Student life may revolve more around the city and less around campus activities.</li>
-                    <li>Join student associations ("associations étudiantes") to meet fellow students.</li>
-                    <li>Explore local cafes, museums, and cultural events in your free time.</li>
-                </ul>
+                    <h2 class="contents">Campus Life and Social Opportunities</h2>
+                    <p class="contents">While social activities are not as integrated into the university experience as they are in American colleges, French universities still offer clubs and student organizations, though they may be less prominent. However, life in France is centered more around the cities themselves than the campuses. Taking part in local events, festivals, and exploring the cultural landscape is a significant part of the experience.</p>
+                    <p class="contents">What to expect:</p>
+                    <ul>
+                        <li>Student life may revolve more around the city and less around campus activities.</li>
+                        <li>Join student associations ("associations étudiantes") to meet fellow students.</li>
+                        <li>Explore local cafes, museums, and cultural events in your free time.</li>
+                    </ul>
             </section>
             <section class="even" id="Health">
-                <h2>Health and Wellness in France</h2>
-                <p>The French healthcare system is highly regarded, and as a student, you’ll likely have access to it through student health insurance. You may need to register with a local doctor or healthcare provider. Make sure to bring any necessary health documents and understand how to access healthcare services during your stay.</p>
-                <p>Health tips:</p>
-                <ul>
-                    <li>Ensure you have the proper health insurance for your stay, which can often be provided by your university.</li>
-                    <li>Familiarize yourself with the French healthcare system and register with a general practitioner if needed.</li>
-                    <li>Take advantage of pharmacies ("pharmacies") for minor medical needs.</li>
-                </ul>
+                    <h2 class="contents">Health and Wellness in France</h2>
+                    <p class="contents">The French healthcare system is highly regarded, and as a student, you’ll likely have access to it through student health insurance. You may need to register with a local doctor or healthcare provider. Make sure to bring any necessary health documents and understand how to access healthcare services during your stay.</p>
+                    <p class="contents">Health tips:</p>
+                    <ul >
+                        <li>Ensure you have the proper health insurance for your stay, which can often be provided by your university.</li>
+                        <li>Familiarize yourself with the French healthcare system and register with a general practitioner if needed.</li>
+                        <li>Take advantage of pharmacies ("pharmacies") for minor medical needs.</li>
+                    </ul>
+                    
             </section>
-            
         </div>
         <footer>
             <p><a href="/">Home</a></p> 
@@ -75,5 +93,8 @@
             <p><a href="mailto:oceane.poussin@uri.edu">Contact Us</a></p>
         </footer>
     </main>
+
+    <script src="js/simple_script.js"></script>
+
 </body>
 </html>
