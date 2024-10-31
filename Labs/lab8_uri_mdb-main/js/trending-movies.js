@@ -8,7 +8,7 @@ const moviePosters = [
 
 const moviePages = [
     "pitch-perfect.html",
-	"https://zoechesnais.rhody.dev/csc271_projects/labs/lab8_uri_mdb/index.html"
+	"https://zoechesnais.rhody.dev/csc271_projects/labs/lab8_uri_mdb/mamma-mia.html"
 ];
 
 const movieRatings = [5, 4];
