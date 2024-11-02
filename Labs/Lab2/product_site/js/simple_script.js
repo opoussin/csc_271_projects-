@@ -34,6 +34,11 @@ function translateToFrench() { // this function is made to translate the english
         "Santé et bien-être en France",
         "Le système de santé français est très apprécié, et en tant qu'étudiant, vous aurez probablement accès à celui-ci grâce à l'assurance santé étudiante. Vous devrez peut-être vous inscrire auprès d'un médecin ou d'un prestataire de soins de santé local. Assurez-vous d'apporter tous les documents de santé nécessaires et de comprendre comment accéder aux services de santé pendant votre séjour.",
         "Conseils de santé :",
+        "Etes-vous prêt à aller en France?",
+        "Destinations en France",
+        "Paris, la capitale, est connue pour son art, sa mode et ses monuments emblématiques comme la Tour Eiffel.",
+        "Lyon est célèbre pour sa cuisine et sa riche histoire, en faisant un centre culturel en France.",
+        "Marseille, une ville portuaire, offre de belles plages, des marchés animés et une atmosphère méditerranéenne unique."
     ];
     for (let i = 0; i < contentElements.length; i++) {
         contentElements[i].innerHTML = translation[i];
