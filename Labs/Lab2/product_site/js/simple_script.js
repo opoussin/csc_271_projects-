@@ -4,16 +4,20 @@ document.querySelector('form').addEventListener('submit', function (event) { //t
 
     const creditNumber = document.getElementById('CreditNumber').value;
     const translation = document.getElementById('translation').value;
+    var result = calculateCredits(translation, creditNumber);
+    document.getElementById('CreditResult').innerHTML = "Result: <strong>"+result+"</strong>"; // by using innerHTML, the HTML tags that are in the text will be interprated as HTML and not as a string, the result will be displayed in bold
+
+});
+
+function calculateCredits(translation, creditNumber) { // this function is made to calculate the number of credits
     let result;
     if (translation === '1') {// if the option is 1, the translation is from US credits to EU credits
         result = creditNumber * 1.5;
     } else {
         result = creditNumber / 1.5;
     }
-    document.getElementById('CreditResult').innerHTML = "Result: <strong>"+result+"</strong>"; // by using innerHTML, the HTML tags that are in the text will be interprated as HTML and not as a string, the result will be displayed in bold
-
-});
-
+    return result
+}
 
 function translateToFrench() { // this function is made to translate the english content of the page to french 
     event.preventDefault(); //this prevents the page to reload when the user hits the button

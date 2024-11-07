@@ -9,20 +9,29 @@ const cards = document.querySelectorAll('.city_cards');
 const cardImages = document.getElementsByClassName('card-img');
 const cityNames = document.getElementsByClassName('name');
 const cityDescriptions = document.getElementsByClassName('description');
+const cards_content = document.getElementsByClassName('card_content');
 
-for( var i = 0; i < cards.length; i++){ // this loop goes through every card in the file and updates its data
-    const cardImage = cardImages[i];
-    cardImage.src = images[i];
-    cardImage.alt = cities[i];
-    cityNames[i].textContent = cities[i];
-    cityDescriptions[i].textContent = descriptions[i];
-
-};
-
-
-
-
+function make_card (){
+   for( var i = 0; i < cards.length; i++){// this loop goes through every card in the file and updates its data
+        card_content(i, cities[i], descriptions[i], images[i]);
+    };
 
     for (let j = 0; j < cityNames.length; j++) {
         cityNames[j].style.color = ' #FF0000';
-    }
+    }      
+}
+
+
+
+function card_content (i, name, description, image){
+        //card_content.innerHTML += '<h3 class="name">' + city_name + '"</h3>';
+        //card_content.innerHTML += '<p class="description">' + city_description + '</p>';
+        const cardImage = cardImages[i];
+        cardImage.src = image;
+        cardImage.alt = name;
+        cityNames[i].textContent = name;
+        cityDescriptions[i].textContent = description;
+}
+
+
+make_card();
