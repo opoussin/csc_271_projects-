@@ -122,7 +122,7 @@
                 <p id="form-undertext"><em>More recipes to come....</em></p>
                 <br>
 
-                <form action="usa.html" method="post">
+                <form id="recipeForm">
                     <label for="recipe">Choose a recipe:</label>    
                     <select name="recipe" id="recipe">
                         <option value="1">Quiche Lorraine</option>
@@ -134,6 +134,7 @@
                     <br>
                     <label for="suggestion">Any other suggestion?</label>
                     <input type="text" id="suggestion" name="suggestion">
+                    <div id="feedback"></div>
                     <br>
                     <br>
                     <input type="submit" value="Submit">
@@ -188,5 +189,6 @@
     </main>
     <script src="js/simple_script.js"></script>
     <script src="js/american_loop.js"></script>
+    <script src="js/event.js"></script>
 </body>
 </html>
