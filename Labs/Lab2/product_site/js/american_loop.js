@@ -1,4 +1,4 @@
-const images = ['images/new_york.jpg', 'images/los_angeles.jpg', 'images/chicago.jpg'];
+const images = ['./images/new_york.jpg', './images/los_angeles.jpg', 'images/chicago.jpg'];
 const cities = ['New York City', 'Los Angeles', 'Chicago'];
 const descriptions = ['The city that never sleeps offers endless opportunities for students, from world-class universities to cultural experiences.', 
     'Home to Hollywood and beautiful beaches, LA is a vibrant city with diverse educational institutions.',
