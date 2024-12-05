@@ -1,4 +1,4 @@
-const images = ['../images/new_york.jpg', '../images/los_angeles.jpg', '../images/chicago.jpg'];
+const images = ['images/new_york.jpg', 'images/los_angeles.jpg', 'images/chicago.jpg'];
 const cities = ['New York City', 'Los Angeles', 'Chicago'];
 const descriptions = ['The city that never sleeps offers endless opportunities for students, from world-class universities to cultural experiences.', 
     'Home to Hollywood and beautiful beaches, LA is a vibrant city with diverse educational institutions.',
@@ -24,8 +24,6 @@ function make_card (){
 
 
 function card_content (i, name, description, image){
-        //card_content.innerHTML += '<h3 class="name">' + city_name + '"</h3>';
-        //card_content.innerHTML += '<p class="description">' + city_description + '</p>';
         const cardImage = cardImages[i];
         cardImage.src = image;
         cardImage.alt = name;

@@ -46,7 +46,7 @@ const ambassador1 = new Ambassador(
 );
 
 const ambassador2 = new Ambassador(
-    102, 
+    1, 
     "images/john.png", 
     "John Miller", 
     "American", 
