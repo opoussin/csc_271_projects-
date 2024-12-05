@@ -1,7 +1,7 @@
 const images = [
-    '../images/paris.jpg', 
-    '../images/lyon.jpg', 
-    '../images/marseille.jpg'
+    './images/paris.jpg', 
+    './images/lyon.jpg', 
+    './images/marseille.jpg'
 ];
 
 const cities = [
